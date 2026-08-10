@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS gr_index (
+  code  TEXT PRIMARY KEY,
+  title TEXT NOT NULL
+);
