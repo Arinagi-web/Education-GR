@@ -205,9 +205,7 @@ export default function NewPreview() {
     setError("");
 
     try {
-      const response = await fetch(
-        `${API_BASE || "http://localhost:3001"}/api/grs`
-      );
+      const response = await fetch("/api/grs");
 
       if (!response.ok) {
         throw new Error(`Server returned ${response.status}`);
